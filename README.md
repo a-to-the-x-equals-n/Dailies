@@ -1,6 +1,6 @@
 # Dailies <!-- omit in toc -->
 
-I wanted to keep my programmer skills tuned post grad school, so I tried out a few websites--exercism, leetcode, etc.  Usually, I copy/paste the exercises into my own editing environment anyways, so I figured why not just use `Codex` or `Claude` to create a custom learning environment customized exactly to my preferences.
+_I wanted to keep my programmer skills tuned post grad school, so I tried out a few websites--exercism, leetcode, etc.  Usually, I copy/paste the exercises into my own editing environment anyways, so I figured why not just use `Codex` or `Claude` to create a custom learning environment customized exactly to my preferences._
 
 ## Table of Contents <!-- omit in toc -->
 - [Tour](#tour)
