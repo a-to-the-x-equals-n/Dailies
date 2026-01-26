@@ -135,11 +135,11 @@
 1. Create a date folder in `rs/` using format `mm-dd-yy` (e.g., `rs/01-25-26/`)
 2. Create a `.rs` file with an intuitive name based on the task (e.g., `temperature_converter.rs`, `ownership_stack.rs`)
 3. Write the challenge description and starter code using comments
-4. **Update `rs/Cargo.toml`** to register the new challenge as a binary:
+4. **Update root `Cargo.toml`** to register the new challenge as a binary:
    ```toml
    [[bin]]
    name = "mm-dd-yy_challenge_name"
-   path = "mm-dd-yy/challenge_name.rs"
+   path = "rs/mm-dd-yy/challenge_name.rs"
    ```
    This is required for rust-analyzer LSP support in VS Code.
 

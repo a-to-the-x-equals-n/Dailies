@@ -1,0 +1,16 @@
+[package]
+name = "rust-dailies"
+version = "0.1.0"
+edition = "2021"
+
+# Each daily challenge is registered as a separate binary
+# Add new entries as you create challenges
+
+[[bin]]
+name = "01-25-26_find_max"
+path = "rs/01-25-26/find_max.rs"
+
+# Example for future dailies:
+# [[bin]]
+# name = "01-26-26_challenge_name"
+# path = "rs/01-26-26/challenge_name.rs"

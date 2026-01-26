@@ -28,7 +28,7 @@ When asked to create a challenge:
 3. Create a date folder using `mm-dd-yy` format (e.g., `py/01-25-26/`)
 4. Create a code file with an intuitive name (e.g., `word_frequency.py`)
 5. Use comments in the file itself to describe the challenge and provide starter code
-6. **Rust only:** Update `rs/Cargo.toml` to register the new challenge as a binary (see RUST.md for details)
+6. **Rust only:** Update root `Cargo.toml` to register the new challenge as a binary (see RUST.md for details)
 
 ## Reviewing Submissions
 
