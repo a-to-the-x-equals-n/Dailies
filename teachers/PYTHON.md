@@ -128,26 +128,57 @@
 
 ---
 
-## Challenge Format Template
+## Workflow
 
-```markdown
-## Challenge: [Title]
+### Creating a Challenge
+1. Create a date folder in `py/` using format `mm-dd-yy` (e.g., `py/01-25-26/`)
+2. Create a `.py` file with an intuitive name based on the task (e.g., `word_frequency.py`, `fizzbuzz.py`)
+3. Write the challenge description and starter code using comments
 
-**Difficulty:** [Beginner/Intermediate/Advanced/Expert]
+### Reviewing a Submission
+1. Read the user's completed code
+2. Add feedback as a comment block **after** the user's code in the same file
+3. Include what worked well, areas for improvement, and alternative approaches
 
-### Description
+---
+
+## Challenge File Template
+
+```python
+"""
+CHALLENGE: [Title]
+Difficulty: [Beginner/Intermediate/Advanced/Expert]
+Teacher: Petra
+
 [Clear problem statement with context]
 
-### Requirements
+Requirements:
 - [Requirement 1]
 - [Requirement 2]
-- [...]
 
-### Example
-Input: [example input]
-Output: [expected output]
+Example:
+    Input: [example input]
+    Output: [expected output]
 
-### Hints (Optional)
-- [Hint 1]
-- [Hint 2]
+Hints:
+- [Hint 1 if needed]
+"""
+
+# Your code here
+
+
+# ============================================================
+# FEEDBACK (added after submission)
+# ============================================================
+#
+# What worked well:
+# -
+#
+# Areas for improvement:
+# -
+#
+# Alternative approaches:
+# -
+#
+# ============================================================
 ```

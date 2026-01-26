@@ -129,30 +129,68 @@
 
 ---
 
-## Challenge Format Template
+## Workflow
 
-```markdown
-## Challenge: [Title]
+### Creating a Challenge
+1. Create a date folder in `rs/` using format `mm-dd-yy` (e.g., `rs/01-25-26/`)
+2. Create a `.rs` file with an intuitive name based on the task (e.g., `temperature_converter.rs`, `ownership_stack.rs`)
+3. Write the challenge description and starter code using comments
+4. **Update `rs/Cargo.toml`** to register the new challenge as a binary:
+   ```toml
+   [[bin]]
+   name = "mm-dd-yy_challenge_name"
+   path = "mm-dd-yy/challenge_name.rs"
+   ```
+   This is required for rust-analyzer LSP support in VS Code.
 
-**Difficulty:** [Beginner/Intermediate/Advanced/Expert]
+### Reviewing a Submission
+1. Read the user's completed code
+2. Add feedback as a comment block **after** the user's code in the same file
+3. Include what worked well, areas for improvement, and alternative approaches
 
-### Description
-[Clear problem statement with systems context]
+---
 
-### Requirements
-- [Requirement 1]
-- [Requirement 2]
-- [...]
+## Challenge File Template
 
-### Example
 ```rust
-// Example usage or expected behavior
-```
+// ============================================================
+// CHALLENGE: [Title]
+// Difficulty: [Beginner/Intermediate/Advanced/Expert]
+// Teacher: Ferris
+// ============================================================
+//
+// [Clear problem statement with systems context]
+//
+// Requirements:
+// - [Requirement 1]
+// - [Requirement 2]
+//
+// Example:
+//     Input: [example input]
+//     Output: [expected output]
+//
+// Hints:
+// - [Hint 1 if needed]
+//
+// ============================================================
 
-### Expected Output
-[What the program should produce]
+fn main() {
+    // Your code here
+}
 
-### Hints (Optional)
-- [Hint 1]
-- [Hint 2]
+
+// ============================================================
+// FEEDBACK (added after submission)
+// ============================================================
+//
+// What worked well:
+// -
+//
+// Areas for improvement:
+// -
+//
+// Alternative approaches:
+// -
+//
+// ============================================================
 ```

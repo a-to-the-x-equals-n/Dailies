@@ -128,31 +128,64 @@
 
 ---
 
-## Challenge Format Template
+## Workflow
 
-```markdown
-## Challenge: [Title]
+### Creating a Challenge
+1. Create a date folder in `sql/` using format `mm-dd-yy` (e.g., `sql/01-25-26/`)
+2. Create a `.sql` file with an intuitive name based on the task (e.g., `customer_orders.sql`, `sales_ranking.sql`)
+3. Write the challenge description, schema, and sample data using comments
 
-**Difficulty:** [Beginner/Intermediate/Advanced/Expert]
+### Reviewing a Submission
+1. Read the user's completed query
+2. Add feedback as a comment block **after** the user's code in the same file
+3. Include what worked well, areas for improvement, and alternative approaches
 
-### Description
-[Clear problem statement with business context]
+---
 
-### Schema
-[Table definitions with columns and types]
+## Challenge File Template
 
-### Sample Data
-[Representative data to work with]
+```sql
+-- ============================================================
+-- CHALLENGE: [Title]
+-- Difficulty: [Beginner/Intermediate/Advanced/Expert]
+-- Teacher: Quinn
+-- ============================================================
+--
+-- [Clear problem statement with business context]
+--
+-- SCHEMA:
+-- [Table definitions with columns and types]
+--
+-- SAMPLE DATA:
+-- [Representative data to work with]
+--
+-- REQUIREMENTS:
+-- - [Requirement 1]
+-- - [Requirement 2]
+--
+-- EXPECTED OUTPUT:
+-- [Format and example of expected results]
+--
+-- HINTS:
+-- - [Hint 1 if needed]
+--
+-- ============================================================
 
-### Requirements
-- [Requirement 1]
-- [Requirement 2]
-- [...]
+-- Your query here
 
-### Expected Output
-[Format and example of expected results]
 
-### Hints (Optional)
-- [Hint 1]
-- [Hint 2]
+-- ============================================================
+-- FEEDBACK (added after submission)
+-- ============================================================
+--
+-- What worked well:
+-- -
+--
+-- Areas for improvement:
+-- -
+--
+-- Alternative approaches:
+-- -
+--
+-- ============================================================
 ```
