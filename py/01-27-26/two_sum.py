@@ -41,19 +41,22 @@ through the list.
 def two_sum(nums: list[int], target: int) -> tuple[int, int] | None:
     # Your code here
 
-    for n in nums:
-        try:
-            # target = 9
-            x = nums.index(target - n)
-            return (nums.index(n), x)
-        except ValueError:
-            continue
+    groups = {}
+
+    for i, n in enumerate(nums):
+
+        complement = target - n
+        if complement in groups:
+            return (groups[complement], i)
+        else:
+            groups[n] = i
+
     return None
 
 
 
 
-# Test cases - uncomment to verify your solution
+# Test cases - uncomment to verify your solutiondwdadw
 print(two_sum([2, 7, 11, 15], 9))  # Expected: (0, 1)
 print(two_sum([3, 2, 4], 6))       # Expected: (1, 2)
 print(two_sum([3, 3], 6))          # Expected: (0, 1)
