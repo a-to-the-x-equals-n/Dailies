@@ -132,53 +132,76 @@
 
 ### Creating a Challenge
 1. Create a date folder in `py/` using format `mm-dd-yy` (e.g., `py/01-25-26/`)
-2. Create a `.py` file with an intuitive name based on the task (e.g., `word_frequency.py`, `fizzbuzz.py`)
-3. Write the challenge description and starter code using comments
+2. Create a Jupyter notebook (`.ipynb`) with an intuitive name based on the task (e.g., `word_frequency.ipynb`, `fizzbuzz.ipynb`)
+3. Use markdown cells for the challenge description, requirements, examples, and hints
+4. Use a code cell with starter code (e.g., function signature, comments) for the user to fill in
+5. Optionally include additional code cells with test cases
 
 ### Reviewing a Submission
-1. Read the user's completed code
-2. Add feedback as a comment block **after** the user's code in the same file
+1. Read the user's completed notebook
+2. Append feedback as new **markdown cells** after the user's code
 3. Include what worked well, areas for improvement, and alternative approaches
+4. Optionally add code cells demonstrating alternative solutions
 
 ---
 
-## Challenge File Template
+## Challenge Notebook Structure
 
-```python
-"""
-CHALLENGE: [Title]
-Difficulty: [Beginner/Intermediate/Advanced/Expert]
-Teacher: Petra
+The notebook should follow this cell layout:
+
+1. **Markdown cell** — Title, difficulty, and problem statement
+2. **Markdown cell** — Requirements, examples, and hints
+3. **Code cell** — Starter code for the user to complete
+4. **Code cell** (optional) — Test cases to validate the solution
+
+### Example cells:
+
+**Cell 1 (Markdown):**
+```markdown
+# [Title]
+**Difficulty:** [Beginner/Intermediate/Advanced/Expert] | **Teacher:** Petra
 
 [Clear problem statement with context]
+```
 
-Requirements:
+**Cell 2 (Markdown):**
+```markdown
+## Requirements
 - [Requirement 1]
 - [Requirement 2]
 
-Example:
-    Input: [example input]
-    Output: [expected output]
+## Example
+| Input | Output |
+|-------|--------|
+| `example_input` | `expected_output` |
 
-Hints:
+## Hints
 - [Hint 1 if needed]
-"""
+```
 
+**Cell 3 (Code):**
+```python
 # Your code here
+```
 
+### Feedback cells (added after submission):
 
-# ============================================================
-# FEEDBACK (added after submission)
-# ============================================================
-#
-# What worked well:
-# -
-#
-# Areas for improvement:
-# -
-#
-# Alternative approaches:
-# -
-#
-# ============================================================
+**Markdown cell:**
+```markdown
+---
+# Feedback
+
+## What worked well
+- ...
+
+## Areas for improvement
+- ...
+
+## Alternative approaches
+- ...
+```
+
+**Code cell (optional):**
+```python
+# Alternative solution
 ```
