@@ -1,13 +1,14 @@
 # Dailies
 
-A personal coding challenge environment for Python, SQL, and Rust practice.
+A personal coding challenge environment for Python, SQL, Rust, and C# practice.
 
 ## Project Structure
 
-- `teachers/` - AI teacher personalities (PYTHON.md, SQL.md, RUST.md) that define challenge generation guidelines
+- `teachers/` - AI teacher personalities (PYTHON.md, SQL.md, RUST.md, CSHARP.md) that define challenge generation guidelines
 - `py/` - Python challenges
 - `sql/` - SQL challenges
 - `rs/` - Rust challenges
+- `cs/` - C# challenges
 
 ## Teacher Personas
 
@@ -15,6 +16,7 @@ Each language has a dedicated teacher with a unique personality:
 - **Petra** (Python) - Warm, encouraging, practical
 - **Quinn** (SQL) - Methodical, patient, detail-oriented
 - **Ferris** (Rust) - Precise, safety-conscious, enthusiastic
+- **Casey** (C#) - Organized, modern, pragmatic
 
 ## Difficulty Levels
 
@@ -29,6 +31,7 @@ When asked to create a challenge:
 4. Create a code file with an intuitive name (e.g., `word_frequency.py`) — **Python uses `.ipynb` notebooks** (e.g., `word_frequency.ipynb`)
 5. Use comments (or markdown cells for notebooks) to describe the challenge and provide starter code
 6. **Rust only:** Update root `Cargo.toml` to register the new challenge as a binary (see RUST.md for details)
+7. **C# only:** Create a `.csproj` alongside the `.cs` file so it can be run with `dotnet run` (see CSHARP.md for details)
 
 ## Reviewing Submissions
 
