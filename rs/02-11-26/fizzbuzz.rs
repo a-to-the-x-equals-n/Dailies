@@ -54,6 +54,38 @@
 //
 // ============================================================
 
+
 fn main() {
-    // Your code here
+    for x in 1..=20 {
+        match (x % 3, x % 5) {
+            (0, 0) => println!("FizzBuzz"),
+            (0, _) => println!("Fizz"),
+            (_, 0) => println!("Buzz"),
+            _ => println!("{x}")
+        }
+    }
 }
+
+// ============================================================
+// FEEDBACK
+// ============================================================
+//
+// What worked well:
+// - Nailed the tuple match pattern: `(n % 3, n % 5)` is exactly
+//   the idiomatic approach and the most elegant way to handle this.
+// - Arm ordering is correct — `(0, 0)` is matched first, so
+//   FizzBuzz is caught before Fizz or Buzz. Order matters in `match`
+//   and you got it right.
+// - Clean, readable code — no unnecessary variables or complexity.
+//
+// One bug to fix:
+// - `1..20` is an *exclusive* range — it stops at 19 and never
+//   prints 20 (which should be "Buzz"). Change it to `1..=20`
+//   (the inclusive range operator) to match the expected output.
+//
+// Minor style note:
+// - `println!("{}", x)` can be written as `println!("{x}")` in
+//   modern Rust (1.58+). Both are correct; the captured variable
+//   syntax is just a bit more concise.
+//
+// ============================================================
