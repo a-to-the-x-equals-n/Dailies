@@ -10,7 +10,6 @@ edition = "2021"
 name = "01-25-26_find_max"
 path = "rs/01-25-26/find_max.rs"
 
-# Example for future dailies:
-# [[bin]]
-# name = "01-26-26_challenge_name"
-# path = "rs/01-26-26/challenge_name.rs"
+[[bin]]
+name = "02-11-26_fizzbuzz"
+path = "rs/02-11-26/fizzbuzz.rs"
